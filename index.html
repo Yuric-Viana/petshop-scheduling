@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="src/styles/index.css">
 </head>
-
 <body>
     <div class="container">
         <div class="logo">
@@ -161,12 +160,12 @@
                 <div class="grid gap-16">
                     <div class="grid">
                         <label for="date-schedule">Data</label>
-                        <input class="input" type="date" name="date-schedule" id="date-schedule">
+                        <input class="input" type="date" name="date-schedule" id="date-schedule" required>
                     </div>
 
                     <div class="grid">
                         <label for="hour">Hora</label>
-                        <input class="input" type="time" name="hour" id="hour">
+                        <input class="input" type="time" name="hour" id="hour" required>
                     </div>
                 </div>
 
@@ -174,6 +173,7 @@
             </form>
         </div>
     </div>
-</body>
 
+    <script src="src/main.js"></script>
+</body>
 </html>

@@ -57,6 +57,10 @@
             padding-top: .75rem;
         }
 
+        & div:nth-child(5) div:nth-child(2) input::after {
+            --img-input: url(../assets/icons/Clock-Circle--Streamline-Solar.svg);
+        }
+
         & button {
             all: unset;
             text-transform: uppercase;
@@ -81,6 +85,8 @@
 
         & form div:nth-child(5) {
             grid-template-columns: 1fr 1fr;
+
+            
         }
     }
 }
