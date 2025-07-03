@@ -51,6 +51,10 @@ body {
     border-end-end-radius: .8rem;
 }
 
+ul[role=list] {
+    list-style: none;
+}
+
 @media (width >= 80rem) {
     :root {
         --display: flex;

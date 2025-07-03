@@ -1,5 +1,8 @@
 main {
-    padding: 4.375rem 1.25rem;
+    display: grid;
+    position: relative;
+    padding-block: 4.375rem 9rem;
+    padding-inline: 1.25rem;
 
     & div.display {
         & div:nth-child(1) {
@@ -17,7 +20,7 @@ main {
         & div:nth-child(2) {
             width: max-content;
             height: max-content;
-            
+
             & input {
                 position: relative;
                 width: 11.5rem;
@@ -33,13 +36,13 @@ main {
                 &::-webkit-calendar-picker-indicator {
                     opacity: 0;
                 }
-                
+
                 &::after {
                     content: '';
                     position: absolute;
                     background: url(../assets/icons/Calendar-Minimalistic--Streamline-Solar.svg) no-repeat center/contain;
                     left: 1rem;
-                    top: 1rem;
+                    top: .9rem;
                     width: 1rem;
                     height: 1rem;
                 }
@@ -51,9 +54,121 @@ main {
                     right: 1rem;
                     width: 1rem;
                     height: 1rem;
-;
+                    ;
                 }
             }
+        }
+    }
+
+    & section {
+        background-color: var(--bg-tertiary);
+        padding-inline: 1.25rem;
+        border-radius: .6rem;
+
+        & .period {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font: var(--label-lg);
+            border-bottom: 1px solid var(--border-divisor);
+            padding-block: .75rem;
+
+            & span:nth-child(1) {
+                color: var(--content-primary);
+                display: flex;
+                align-items: center;
+                text-align: center;
+                gap: .75rem;
+            }
+
+            & span:nth-child(2) {
+                color: var(--content-secondary);
+            }
+        }
+
+        & ul {
+            padding-block: 1.5rem;
+
+            & li {
+                font: var(--text-sm);
+                display: grid;
+
+                & div {
+                    display: flex;
+                    align-items: center;
+                    gap: .75rem;
+
+                    &>strong {
+                        font: var(--label-md);
+                        color: var(--content-primary);
+                    }
+
+                    & p {
+                        & strong {
+                            font: var(--label-sm);
+                            color: var(--content-primary);
+                        }
+
+                        & span {
+                            font: var(--text-sm);
+                            color: var(--content-secondary);
+                        }
+                    }
+                }
+
+                & span {
+                    font: var(--text-sm);
+                    color: var(--content-secondary);
+                }
+
+                & button {
+                    all: unset;
+                    color: var(--content-tertiary);
+                    width: max-content;
+                    margin-left: auto;
+                    margin-top: .5rem;
+                }
+            }
+
+            & li:not(:first-child) {
+                padding-block: 1rem 1rem;
+            }
+
+            & li:not(:last-child) {
+                border-bottom: 1px solid var(--border-divisor);
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+    & section+section {
+        margin-top: .75rem;
+    }
+
+    & section#morning {
+        margin-top: 2rem;
+    }
+
+    & div.new-schedule {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #23242C;
+        padding-block: 1.125rem;
+
+        & button {
+            all: unset;
+            display: block;
+            margin: 0 auto;
+
+            text-transform: uppercase;
+            font: var(--label-lg);
+
+            color: #050505;
+            background-color: var(--content-brand);
+
+            padding: .75rem 1.5rem;
+            border-radius: .6rem;
         }
     }
 }
@@ -69,6 +184,27 @@ main {
 
         & div div:nth-child(1) {
             width: 32.875rem;
+        }
+
+        & section {
+            & ul {
+                & li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    & button {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        & div.new-schedule {
+            all: unset;
+            position: absolute;
+            right: -16rem;
+            bottom: -2rem;
         }
     }
 }
