@@ -1,0 +1,11 @@
+.display {
+    display: var(--display);
+}
+
+.gap-12 {
+    gap: .75rem;
+}
+
+.gap-16 {
+    gap: 1rem;
+}
