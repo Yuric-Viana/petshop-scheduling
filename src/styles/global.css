@@ -51,6 +51,14 @@ body {
     border-end-end-radius: .8rem;
 }
 
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+}
+
 ul[role=list] {
     list-style: none;
 }
@@ -58,5 +66,9 @@ ul[role=list] {
 @media (width >= 80rem) {
     :root {
         --display: flex;
+    }
+
+    body {
+        overflow-y: hidden;
     }
 }
