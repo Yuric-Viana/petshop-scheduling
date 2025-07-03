@@ -23,7 +23,7 @@
                 </div>
 
                 <div>
-                    <input type="date" name="date" id="date" required>
+                    <input class="input" type="date" name="date" id="date" required>
                 </div>
             </div>
 
@@ -120,9 +120,57 @@
 
         <div class="overlay"></div>
 
-        <div class="front">
-            <form>
-                
+        <div id="front">
+            <header>
+                <h2>Agende um atendimento</h2>
+                <p>Preencha os dados do cliente para realizar o agendamento:</p>
+            </header>
+
+            <form class="grid gap-16">
+                <div>
+                    <label for="name">Nome do tutor</label>
+                    <div class="input-info">
+                        <img src="src/assets/icons/User--Streamline-Solar.svg" alt="">
+                        <input type="text" name="name" id="name" placeholder="Helena Souza" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="name-tutor">Nome do tutor</label>
+                    <div class="input-info">
+                        <img src="src/assets/icons/Pet-Paw--Streamline-Core.svg" alt="">
+                        <input type="text" name="name-tutor" id="name-tutor" placeholder="Cheddar" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="cellphone">Telefone</label>
+                    <div class="input-info">
+                        <img src="src/assets/icons/Phone--Streamline-Solar.svg" alt="">
+                        <input type="text" name="cellphone" id="cellphone" placeholder="(00) 0 0000-0000" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="bath">Telefone</label>
+                    <div class="textarea">
+                        <textarea name="bath" id="bath" placeholder="Banho e tosa" rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <div class="grid gap-16">
+                    <div class="grid">
+                        <label for="date-schedule">Data</label>
+                        <input class="input" type="date" name="date-schedule" id="date-schedule">
+                    </div>
+
+                    <div class="grid">
+                        <label for="hour">Hora</label>
+                        <input class="input" type="time" name="hour" id="hour">
+                    </div>
+                </div>
+
+                <button type="submit">Agendar</button>
             </form>
         </div>
     </div>

@@ -2,6 +2,10 @@
     display: var(--display);
 }
 
+.grid {
+    display: grid;
+}
+
 .gap-12 {
     gap: .75rem;
 }
