@@ -6,7 +6,7 @@ Projeto prático desenvolvido como desafio da formação Full-Stack da [Rocketse
 
 A aplicação **Mundo Pet** permite o gerenciamento de agendamentos de serviços para pets. Com uma interface moderna e responsiva, o sistema facilita o controle de atendimentos por parte dos profissionais da área pet.
 
-![Preview do Projeto](./c4ff74b5-5d1a-4d4a-beac-cfea875b1e19.png)
+![Preview do Projeto](./src/assets/interface-project.png)
 
 ## 🚀 Funcionalidades
 
