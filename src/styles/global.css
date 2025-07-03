@@ -37,6 +37,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #14151D;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2E2C30;
+    padding-block: .75rem;
+    padding-inline: .75rem 1.5rem;
+    border-end-end-radius: .8rem;
+}
+
 @media (width >= 80rem) {
     :root {
         --display: flex;
