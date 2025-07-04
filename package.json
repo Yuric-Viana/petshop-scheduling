@@ -1,0 +1,29 @@
+{
+  "name": "agendamento-petshop",
+  "description": "Sistema para agendamento de serviços em petshop.",
+  "author": {
+    "name": "Yuri Viana",
+    "email": "ycviana.dev@gmail.com"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "server": "json-server --watch server.json --port 3333"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "json-server": "^1.0.0-beta.3"
+  }
+}

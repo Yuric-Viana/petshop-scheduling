@@ -39,6 +39,7 @@
             border: 1px solid var(--border-primary);
             border-radius: .6rem;
             padding: .75rem;
+            color: var(--content-primary);
 
             & input {
                 all: unset;
@@ -51,6 +52,7 @@
             width: 100%;
             box-sizing: border-box;
             margin-top: .25rem;
+            color: var(--content-primary);
 
             border-radius: .6rem;
             padding-left: .75rem;
