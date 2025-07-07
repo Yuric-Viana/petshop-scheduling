@@ -42,16 +42,6 @@ function isValidTrue() {
     return isValid
 }
 
-let notValid = false
-// async function isNotValid() {
-//     const dailySchedules = await scheduleFetchByDay({ date })
-
-//     const isNot = hoursLoad({ date, dailySchedules })
-
-//     // console.log(isNot);
-// }
-// isNotValid()
-
 inputs.forEach((input) => {
     input.addEventListener('input', () => {
         isFilled()
