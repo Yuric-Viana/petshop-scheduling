@@ -21,7 +21,7 @@ A aplicação **Mundo Pet** permite o gerenciamento de agendamentos de serviços
 - CSS3  
 - JavaScript (ES6+)  
 - Babel  
-- Vite (ou outro bundler utilizado)  
+- Webpack
 - Responsividade com Flexbox/Grid
 
 ## 💡 Aprendizados
