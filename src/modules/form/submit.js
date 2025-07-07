@@ -3,6 +3,7 @@ import { scheduleNew } from "../services/new-schedule.js"
 import { schedulesDay } from "../schedules/load.js"
 import { hourIsNotValid } from "./event.js"
 import { showForm } from "./event.js"
+import { dateIsNotValid } from "./event.js"
 
 const form = document.querySelector('form')
 const nameTutor = document.getElementById('name-tutor')
@@ -47,6 +48,7 @@ form.addEventListener('submit', async (event) => {
 
         const date = selectedDate.value
         if (!date) return alert('Insira a data que deseja fazer a marcação!')
+        dateIsNotValid({ date, inputToday })
 
         const newHour = valueHour.replace(/:(\d{2})$/, ':00');
         const isHourUnavailable = await hourIsNotValid({ data: selectedDate })

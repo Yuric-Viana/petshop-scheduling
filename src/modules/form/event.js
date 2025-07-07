@@ -10,7 +10,6 @@ const nameTutor = document.getElementById('name-tutor')
 const namePet = document.getElementById('name-pet')
 const cellphone = document.getElementById('cellphone')
 const descriptionService = document.getElementById('description-service')
-const date = document.getElementById('date-schedule')
 const timeInput = document.getElementById('hour');
 let hour = document.getElementById('hour')
 
@@ -86,3 +85,9 @@ timeInput.addEventListener('input', () => {
     const [hour] = timeInput.value.split(':');
     timeInput.value = `${hour.padStart(2, '0')}:00`;
 });
+
+export function dateIsNotValid({ date, inputToday }) {
+    if(date != inputToday) {
+        return
+    }
+}
