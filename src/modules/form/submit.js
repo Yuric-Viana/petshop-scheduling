@@ -43,7 +43,7 @@ form.addEventListener('submit', async (event) => {
         const valueHour = selectedHour.value
         if (!valueHour) return alert('Insira o horário desejado!')
 
-        const id = Number(new Date().getTime())
+        const id = String(new Date().getTime())
 
         const date = selectedDate.value
         if (!date) return alert('Insira a data que deseja fazer a marcação!')

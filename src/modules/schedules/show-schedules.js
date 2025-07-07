@@ -10,6 +10,8 @@ export function showSchedules({ dailySchedules }) {
         periodAfternoon.innerHTML = ''
         periodNight.innerHTML = ''
 
+        dailySchedules.sort((a, b) => dayjs(a.when).valueOf() - dayjs(b.when).valueOf());
+
         dailySchedules.forEach((schedule) => {
             const li = document.createElement('li')
             li.classList.add('display')
