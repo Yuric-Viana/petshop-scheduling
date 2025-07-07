@@ -139,6 +139,10 @@ main {
             border-radius: .6rem;
         }
     }
+
+    & .remove-schedule {
+        cursor: pointer;
+    }
 }
 
 @media (width >=80rem) {

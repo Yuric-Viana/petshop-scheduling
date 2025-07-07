@@ -30,86 +30,33 @@
                 <header class="period"> 
                     <span>
                         <img src="src/assets/icons/Sun-Fog--Streamline-Solar.svg" alt="">
-                        Tarde
+                        Manhã
                     </span>
                     <span>09h-12h</span>
                 </header>
-                <ul role=list>
-                    <li class="display">
-                        <div>
-                            <strong>09:00</strong>
-                            <p>
-                                <strong>Thor</strong> <span>/ Yuri Viana</span>
-                            </p>
-                        </div>
-                        <span>Vacinação</span>
-                        <button>Remover agendamento</button>
-                    </li>
-                </ul>
+                <ul class="list-period" id="period-morning" role=list></ul>
             </section>
 
             <section id="afternoon">
                 <header class="period"> 
                     <span>
                         <img src="src/assets/icons/Cloud-Sun-4--Streamline-Solar.svg" alt="">
-                        Manhã
+                        Tarde
                     </span>
                     <span>13h-18h</span>
                 </header>
-                <ul role=list>
-                    <li class="display">
-                        <div>
-                            <strong>09:00</strong>
-                            <p>
-                                <strong>Thor</strong> <span>/ Yuri Viana</span>
-                            </p>
-                        </div>
-                        <span>Vacinação</span>
-                        <button>Remover agendamento</button>
-                    </li>
-                    <li class="display">
-                        <div>
-                            <strong>09:00</strong>
-                            <p>
-                                <strong>Thor</strong> <span>/ Yuri Viana</span>
-                            </p>
-                        </div>
-                        <span>Vacinação</span>
-                        <button>Remover agendamento</button>
-                    </li>
-                    <li class="display">
-                        <div>
-                            <strong>09:00</strong>
-                            <p>
-                                <strong>Thor</strong> <span>/ Yuri Viana</span>
-                            </p>
-                        </div>
-                        <span>Vacinação</span>
-                        <button>Remover agendamento</button>
-                    </li>
-                </ul>
+                <ul class="list-period" id="period-afternoon" role=list></ul>
             </section>
 
             <section id="night">
                 <header class="period"> 
                     <span>
                         <img src="src/assets/icons/Moon-Stars--Streamline-Solar.svg" alt="">
-                        Manhã
+                        Noite
                     </span>
                     <span>19h-21h</span>
                 </header>
-                <ul role=list>
-                    <li class="display">
-                        <div>
-                            <strong>09:00</strong>
-                            <p>
-                                <strong>Thor</strong> <span>/ Yuri Viana</span>
-                            </p>
-                        </div>
-                        <span>Vacinação</span>
-                        <button>Remover agendamento</button>
-                    </li>
-                </ul>
+                <ul class="list-period" id="period-night" role=list></ul>
             </section>
 
             <div class="new-schedule">
@@ -127,18 +74,18 @@
 
             <form class="grid gap-16">
                 <div>
-                    <label for="name">Nome do tutor</label>
+                    <label for="name-tutor">Nome do tutor</label>
                     <div class="input-info">
                         <img src="src/assets/icons/User--Streamline-Solar.svg" alt="">
-                        <input type="text" name="name" id="name" placeholder="Helena Souza" required>
+                        <input class="input-form"  type="text" name="name-tutor" id="name-tutor" placeholder="Helena Souza" required>
                     </div>
                 </div>
 
                 <div>
-                    <label for="name-tutor">Nome do pet</label>
+                    <label for="name-pet">Nome do pet</label>
                     <div class="input-info">
                         <img src="src/assets/icons/Pet-Paw--Streamline-Core.svg" alt="">
-                        <input type="text" name="name-tutor" id="name-tutor" placeholder="Cheddar" required>
+                        <input class="input-form"  type="text" name="name-pet" id="name-pet" placeholder="Cheddar" required>
                     </div>
                 </div>
 
@@ -146,14 +93,14 @@
                     <label for="cellphone">Telefone</label>
                     <div class="input-info">
                         <img src="src/assets/icons/Phone--Streamline-Solar.svg" alt="">
-                        <input type="text" name="cellphone" id="cellphone" placeholder="(00) 0 0000-0000" required>
+                        <input class="input-form"  type="text" name="cellphone" id="cellphone" placeholder="(00) 0 0000-0000" required>
                     </div>
                 </div>
 
                 <div>
-                    <label for="bath">Descrição do serviço</label>
+                    <label for="description-service">Descrição do serviço</label>
                     <div class="textarea">
-                        <textarea name="bath" id="bath" placeholder="Banho e tosa" rows="4" required></textarea>
+                        <textarea class="input-form" name="description-service" id="description-service" placeholder="Banho e tosa" rows="4" required></textarea>
                     </div>
                 </div>
 
@@ -165,11 +112,11 @@
 
                     <div class="grid">
                         <label for="hour">Hora</label>
-                        <input class="input" type="time" name="hour" id="hour" required>
+                        <input class="input" type="time" max="21:00"  min="09:00" name="hour" step="3600" id="hour" required>
                     </div>
                 </div>
 
-                <button type="submit">Agendar</button>
+                <button id="submit-schedule">Agendar</button>
             </form>
         </div>
     </div>
